@@ -1,0 +1,13 @@
+Spring:
+  application:
+    name: service-discovery
+
+server:
+  port: 9999
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://127.0.0.1:9999/eureka}
